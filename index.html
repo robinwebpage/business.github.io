@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <meta charset="utf-8">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <style>
+                    .hovereffect:hover{
+                        transform: scale(1.05);
+                        transition:  .5s ease;
+                        cursor: pointer;
+                    }
+                    div{
+                        overflow-x: hidden;
+                        overflow-y: hidden;
+
+                    }
+                    .active{
+                        text-decoration: underline;
+                        
+                    }
+                    .resize{
+                        color: white; margin-top: 40px; font-size: 64px;
+                    }
+                    .backgroundimg{
+                        background-image: url('headerimg.jpg'); background-size: 100% 100%; padding-bottom: 50px;
+                    }
+                    
+                    @media only screen and (max-width: 1000px) {
+                        .resize {
+                            font-size: 33px;
+                        }
+                        .backgroundimg{
+                            background-image: url("backgroundimg3.png");
+                        }
+                    }
+                </style>
+    </head>
+    <body>
+        
+        <div class="container-fluid backgroundimg">
+            <div class="row mt-2">
+                <div class="row col-lg-6" style="color: white;">
+                    <span><i class="fa fa-envelope-o ml-2" aria-hidden="true"></i> brand@company.com</span>
+                    <span><i class="fa fa-phone ml-3" aria-hidden="true"></i> (024) 2 6129847</span>
+                    <span><i class="fa fa-clock-o ml-3" aria-hidden="true"></i> Mon. - Fri. 11AM - 19PM</span>
+                </div>
+                <div class="row  col-lg-6 mt-2" style="color: white;">
+                    <i class="fa fa-facebook ml-auto" aria-hidden="true"></i>
+                    <i class="fa fa-twitter ml-3" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin ml-3" aria-hidden="true"></i>
+                    <i class="fa fa-search ml-4" aria-hidden="true"></i>
+                </div>
+                <hr class="container-fluid" style="color:white;">
+            </div>
+            
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="logo.png" data-aos="zoom-out-down" data-aos-delay="1000">
+                <button class="navbar-toggler" type="button" onclick="display()" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span  class="fa fa-bars"  id="ispan" style="color:white;"></span>
+                </button>
+                <div class="navbar-collapse" id="navbarNav" data-aos="fade-up" data-aos-delay="800" style="display: none;">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link active" href="#" style="color:white;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color:white;">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color:white;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color:white;">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color:white;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="#"> <label class="nav-link" type="lable" href="#" style="color:white; background-color: blue; cursor: pointer; width:78px;">Purchase</label></a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <div class="text-center" style="color: white; margin-top: 140px; font-size: 20px;" data-aos="fade-up" data-aos-delay="400">Compliment your ideas with</div>
+            <div class="text-center resize" data-aos="fade-down" data-aos-delay="500">Perfect business template</div>
+            <div class="container" style="margin-top: 100px;">
+              <div class="row text-center">
+                <div class="col-lg-4" style="color:white;" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa fa-mobile" aria-hidden="true" style="color: white; font-size: 60px;"></i>
+                    <h2>01. Mobile ready</h2>
+                    <p>Lorem ipsum dolor sit amet, Phasellus id erat eu.</p>
+                </div>
+                <div class="col-lg-4" style="color:white;" data-aos="fade-down" data-aos-delay="600">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true" style="color: white; font-size: 60px;"></i>
+                    <h2>01. Customizable</h2>
+                    <p>Lorem ipsum dolor sit amet, Phasellus id erat eu.</p>
+                </div>
+                <div class="col-lg-4" style="color:white;" data-aos="fade-up" data-aos-delay="800">
+                    <i class="fa fa-shopping-cart" aria-hidden="true" style="color: white; font-size: 60px;"></i>
+                    <h2>01. Affordable</h2>
+                    <p>Lorem ipsum dolor sit amet, Phasellus id erat eu.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 100px;">
+            <div class="row">
+                <div class="col-lg-4 my-auto" data-aos="fade-right" data-aos-delay="400">
+                    <h1>About our main company goal</h1>
+                    <p>Vivamus fermentum, augue a gravida gravida, odio erat malesuada est, eu condimentum lorem felis sed risus.</p>
+                    <button style="background-color: blue; color:white; margin-bottom: 30px;">Read More</button>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="800">
+                    <img src="midimg1.jpg" class="img-fluid" style="border-radius: 10px;">
+                </div>
+            </div>
+
+        </div>
+        <div class="container" style="margin-top: 100px;">
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="800">
+                    <img src="midimg2.jpg" class="img-fluid" style="border-radius: 10px;">
+                </div>
+                <div class="col-lg-4 my-auto"data-aos="fade-right" data-aos-delay="400">
+                    <h1>When you put your mind to it</h1>
+                    <p>Vivamus fermentum, augue a gravida gravida, odio erat malesuada est, eu condimentum lorem felis sed risus.</p>
+                    <button style="background-color: blue; color:white; margin-bottom: 30px;">Read More</button>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="text-center" style="margin-top: 100px; color:blue;" data-aos="fade-up" data-aos-delay="800">To compliment your ideas</div>
+        <h1 class="text-center" data-aos="fade-up" data-aos-delay="800">Services we can provide</h1>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-3 mt-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pt-5 text-center" style="border: 1px solid lightgray;">
+                        <i class="fa fa-bookmark-o pb-4" aria-hidden="true" style="color:blue; font-size: 30px;"></i>
+                        <h3>Marketing strategies</h3>
+                        <p class="pb-5 pt-3">Vivamus fermentum, augue a grav gravida, odio erat malesuada</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 mt-3" data-aos="fade-down" data-aos-delay="500">
+                    <div class="pt-5 text-center" style="border: 1px solid lightgray;">
+                        <i class="fa fa-line-chart pb-4" aria-hidden="true" style="color:blue; font-size: 30px;"></i>
+                        <h3>Consulting and analysis</h3>
+                        <p class="pb-5 pt-3">Vivamus fermentum, augue a grav gravida, odio erat malesuada</p>
+                    </div>
+
+               </div>
+               <div class="col-lg-3 mt-3" data-aos="fade-up" data-aos-delay="600">
+                    <div class="pt-5 text-center" style="border: 1px solid lightgray;">
+                        <i class="fa fa-television pb-4" aria-hidden="true" style="color:blue; font-size: 30px;"></i>
+                        <h3>Business and planning</h3>
+                        <p class="pb-5 pt-3">Vivamus fermentum, augue a grav gravida, odio erat malesuada</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 mt-3" data-aos="fade-up" data-aos-delay="800">
+                    <div class="pt-5 text-center" style="border: 1px solid lightgray;">
+                        <i class="fa fa-unlock-alt pb-4" aria-hidden="true" style="color:blue; font-size: 30px;"></i>
+                        <h3>30+ years of experience</h3>
+                        <p class="pb-5 pt-3">Vivamus fermentum, augue a grav gravida, odio erat malesuada</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="container-fluid mt-5" data-aos="fade-up" data-aos-delay="500" style="margin-left:0; margin-right:0; padding-left:0; padding-right:0;">
+            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" height="500" width="100%" frameborder="0" title="Iframe Example" style="margin:0; padding:0;"></iframe>
+        </div>
+        <div class="container text-center" style="margin-top:80px; ">
+            <div class="row">
+                <div class="col-lg-4 mt-5" data-aos="fade-out-down" data-aos-delay="300">
+                    <h3 class="font-weight-bolder">jevelin</h3>
+                    <p class=" mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    <i class="fa fa-instagram mr-2" aria-hidden="true" style="font-size: 25px;"></i>
+                    <i class="fa fa-facebook-official mr-2" aria-hidden="true" style="font-size: 25px;"></i>
+                    <i class="fa fa-twitter" aria-hidden="true" style="font-size: 25px;"></i>
+                </div>
+                <div class="col-lg-4 mt-5" data-aos="fade-out-up" data-aos-delay="500">
+                    <h3 class="font-weight-bolder">Contact us</h3>
+                    <i class="fa fa-map-marker mt-3" aria-hidden="true" style="font-size: 25px;">    Street name 1, City</i>
+                    <i class="fa fa-phone mt-3" aria-hidden="true" style="font-size: 25px;">  +569 2698 0256</i>
+                    <i class="fa fa-envelope-o mt-3" aria-hidden="true" style="font-size: 25px;">email@companyname.com</i>
+                </div>
+                <div class="col-lg-4 mt-5" data-aos="fade-out-down" data-aos-delay="800">
+                    <h3 class="font-weight-bolder">Subscribe</h3>
+                    <input class="mt-3" type="text" style="border-radius: 25px; width:inherit; box-sizing: border-box; text-align: center;" placeholder="Enter your email here...">
+                    <a href="#" style="text-decoration: none;"><p class="text-center pt-2 pb-2 mt-3 font-weight-bolder" style="width:inherit; background-color: red; color:white; border-radius: 25px;">SUBSCRIBE</p></a>
+                    <p>Get the latest special offers</p>
+                </div>
+            </div>
+        </div>
+          <script>
+            function display(){
+                  var t=document.getElementById("ispan");
+                  if(t.className==="fa fa-times")
+                  {
+                      t.className="fa fa-bars";
+                      document.getElementById("navbarNav").style.display="none";
+                      
+                  }
+                  else{
+                      t.className="fa fa-times";
+                      document.getElementById("navbarNav").style.display="block";
+                      
+                  }
+            }
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
